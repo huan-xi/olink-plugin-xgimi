@@ -1,0 +1,11 @@
+# macOS 交叉 aarch64 musl（需本机 zig）：
+#   cargo build --release --target aarch64-unknown-linux-musl
+#   ./scripts/pack.sh dist/xgimi.olinkpkg linux aarch64
+
+[target.aarch64-unknown-linux-musl]
+linker = ".cargo/zig-link-aarch64-linux-musl.sh"
+
+[env]
+CC_aarch64_unknown_linux_musl = { value = ".cargo/zigcc-aarch64-linux-musl.sh", relative = true }
+CXX_aarch64_unknown_linux_musl = { value = ".cargo/zigcxx-aarch64-linux-musl.sh", relative = true }
+AR_aarch64_unknown_linux_musl = { value = ".cargo/zig-ar.sh", relative = true }

@@ -1,0 +1,37 @@
+{
+  "domain": "xgimi",
+  "name": "极米",
+  "version": "0.1.3",
+  "description": "极米设备插件（神灯 / 投影仪等）",
+  "publisher": "olink",
+  "runtime": {
+    "type": "process",
+    "entry": "bin/{os}-{arch}/plugin",
+    "default_write_policy": "optimistic"
+  },
+  "ui": {
+    "entry": "ui/entry.js",
+    "css": "ui/entry.css",
+    "runtime": 1,
+    "module": "routes",
+    "olink_ui_peer": "0"
+  },
+  "api": {
+    "transport": "uds",
+    "protocol": 1,
+    "features": ["device.register", "device.attrs", "schedules"],
+    "features_required": ["device.register", "device.attrs"]
+  },
+  "permissions": ["device.register", "device.attrs", "storage.domain"],
+  "schedules": [
+    {
+      "id": "refresh",
+      "kind": "interval",
+      "every_secs": 15,
+      "timeout_secs": 10,
+      "overlap": "skip",
+      "enabled": true
+    }
+  ],
+  "autostart": true
+}

@@ -1,0 +1,257 @@
+/* 布局/卡片：对齐追觅集成页观感；按钮/页头走 @olink-home/ui */
+
+.plg-xgimi-sub {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.plg-xgimi-tip {
+  margin-top: 4px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+  background: #fffbeb;
+  color: #92400e;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.plg-xgimi-error {
+  margin-top: 8px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.plg-xgimi-card {
+  margin-top: 4px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.plg-xgimi-card-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.plg-xgimi-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.plg-xgimi-muted {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.plg-xgimi-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.plg-xgimi-account-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  border: 1px solid #f1f5f9;
+  border-radius: 6px;
+}
+
+.plg-xgimi-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.plg-xgimi-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.plg-xgimi-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.plg-xgimi-row:last-child {
+  border-bottom: none;
+}
+
+.plg-xgimi-row-meta {
+  min-width: 0;
+}
+
+.plg-xgimi-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.plg-xgimi-check input {
+  margin-top: 3px;
+}
+
+.plg-xgimi-dialog-body {
+  display: grid;
+  gap: 12px;
+  padding: 16px 20px;
+  overflow-y: auto;
+}
+
+.plg-xgimi-field {
+  display: grid;
+  gap: 6px;
+}
+
+.plg-xgimi-code-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.plg-xgimi-code-row > *:first-child {
+  flex: 1;
+}
+
+.plg-xgimi-danger {
+  color: #dc2626 !important;
+  border-color: #fecaca !important;
+}
+
+.plg-xgimi-detail-body {
+  max-height: min(60vh, 480px);
+}
+
+.plg-xgimi-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plg-xgimi-detail-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.plg-xgimi-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.plg-xgimi-badge-schema {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.plg-xgimi-badge-ok {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.plg-xgimi-badge-err {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.plg-xgimi-detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plg-xgimi-detail-h {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.plg-xgimi-detail-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+}
+
+.plg-xgimi-detail-cell dt {
+  margin: 0 0 2px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.plg-xgimi-detail-cell dd {
+  margin: 0;
+  font-size: 13px;
+  color: #1e293b;
+  word-break: break-all;
+}
+
+.plg-xgimi-detail-svc {
+  padding: 10px 12px;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plg-xgimi-detail-attrs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.plg-xgimi-detail-attrs li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  color: #334155;
+}
